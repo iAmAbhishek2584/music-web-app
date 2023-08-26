@@ -1,0 +1,41 @@
+body{
+    font-family: 'Ubuntu', sans-serif;
+}
+
+.container {
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    height: 500px;
+}
+
+.player {
+    height: 35px;
+    width: 60%;
+    border: 1px solid whitesmoke;
+    border-radius: 8px;
+    background: transparent;
+    backdrop-filter: blur(5px);
+    font-size: 1.2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.controls {
+    display: inline-block;
+    margin: 6px;
+    position: relative;
+    right: 8px;
+}
+
+.controls i:hover {
+    cursor: pointer;
+}
+
+.player-banner {
+    position: relative;
+    left: 8px;
+    width: 34px;
+    border-radius: 50%;
+}

@@ -1,0 +1,180 @@
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+   background-color: rgb(29, 23, 23);
+    background-size: cover;
+    color: whitesmoke;
+    font-family: 'Ubuntu', sans-serif;
+    
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+
+}
+
+nav {
+    background: transparent;
+    backdrop-filter: blur(5px);
+    display: flex;
+    padding: 15px 0;
+    align-items: center;
+    justify-content: space-around;
+    height: 60px;
+    position: sticky;
+    top: 0;
+    width: 100vw;
+    border-bottom: 1px solid whitesmoke;
+    z-index: 1;
+}
+
+.navbar {
+    width: 40%;
+    position: relative;
+    right: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+nav img {
+    width: 100px;
+}
+
+nav ul li a {
+    color: whitesmoke;
+    font-size: 1.2rem;
+    text-decoration: none;
+    font-weight: bolder;
+}
+
+nav ul li:hover {
+    border-bottom: 2px solid whitesmoke;
+}
+
+nav ul {
+    list-style-type: none;
+}
+
+.search-icon {
+    position: relative;
+    left: 40px;
+    display: flex;
+    width: 380px;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.search-icon input {
+    width: 300px;
+    border: none;
+    border-radius: 5px;
+    outline: none;
+    padding: 6px 8px;
+}
+
+.search-icon input:focus {
+    border: 2px solid rgb(196, 85, 196);
+}
+
+.search {
+    font-size: 1.5rem;
+}
+
+.search:hover,
+.sign-up:hover {
+    font-size: 1.8rem;
+    cursor: pointer;
+}
+
+.sign-up {
+    text-align: center;
+    font-size: 1.5rem;
+}
+
+.banner {
+    margin-left: 12px;
+}
+
+.container {
+    margin: 10px auto;
+    border: 2px solid whitesmoke;
+    border-radius: 5px;
+    width: 98%;
+    max-height: 380px;
+    overflow: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+
+}
+
+.cards {
+    background: transparent;
+    backdrop-filter: blur(5px);
+    width: 20%;
+    margin: 12px 0;
+    border: 1px solid whitesmoke;
+    border-radius: 5px;
+}
+
+.cards h3,
+.cards p {
+    width: 95%;
+    margin: 6px auto;
+}
+
+.cards img {
+    display: block;
+    width: 95%;
+    margin: 4px auto;
+    border-radius: 5px;
+}
+
+.play-btn {
+    font-size: 1.5rem;
+    position: absolute;
+    top: 10px;
+    left: 14px;
+}
+
+.play-btn:hover {
+    cursor: pointer;
+}
+
+.media-player {
+    width: 98%;
+    margin: auto;
+    position: sticky;
+    bottom: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.5rem;
+    background: transparent;
+    backdrop-filter: blur(5px);
+    border: 1px solid whitesmoke;
+    border-radius: 8px;
+}
+
+#progress-bar {
+    width: 94vw;
+}
+
+#progress-bar:hover {
+    cursor: pointer;
+}
+
+.media-icons i:hover {
+    cursor: pointer;
+}
+
+#master-song-name {
+    position: absolute;
+    left: 30px;
+    bottom: 6px;
+    font-size: 1.2rem;
+}

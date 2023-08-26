@@ -1,0 +1,207 @@
+.hamburger {
+    display: none;
+}
+
+/* for mobile phones  */
+@media only screen and (min-width: 375px) and (max-width: 811px) {
+    
+    /* responsive navbar using hamburger method  */
+    .hamburger {
+        display: block;
+        position: relative;
+        z-index: 1;
+    }
+
+    .hamburger:hover {
+        cursor: pointer;
+    }
+
+    .navbar li {
+        display: none;
+    }
+    .search-icon {
+        display: none;
+    }
+
+    .sign-up {
+        position: absolute;
+        right: 40px
+    }
+
+    .logo {
+        position: relative;
+        right: 50px;
+        z-index: 1;
+    }
+
+    nav .navbar.responsive {
+        flex-direction: column;
+    }
+
+    nav {
+        position: static;
+    }
+
+    .response {
+        height: 150px;
+    }
+
+    .responsive {
+        height: 150px;
+    }
+
+    .responsive li {
+        margin: 4px 0;
+        padding: 5px 2px;
+    }
+
+    nav .navbar.responsive li {
+        display: block;
+    }
+    /* adjusting navbar ends here*/
+
+    /* adjusting body content*/
+
+    .cards {
+        width: 80%;
+        height: 100%;
+    }
+
+    #master-song-name {
+        font-size: 0.8rem;
+    }
+}
+
+/* for mini tablets  */
+@media only screen and (min-width: 812px) and (max-width: 920px) {
+    .hamburger {
+        display: block;
+        position: relative;
+        z-index: 1;
+    }
+
+    .hamburger:hover {
+        cursor: pointer;
+    }
+    .navbar li {
+        display: none;
+    }
+
+    .search-icon {
+        width: 150px;
+        position: absolute;
+        left: 540px;
+    }
+
+    .search-icon input {
+        width: 150px;
+        margin-right: 15px;
+    }
+
+    .sign-up {
+        position: absolute;
+        right: 40px
+    }
+
+    .logo {
+        z-index: 1;
+    }
+
+    nav .navbar.responsive {
+        flex-direction: column;
+    }
+
+    nav {
+        position: static;
+        justify-content: start;
+    }
+
+    .response {
+        height: 150px;
+    }
+
+    .responsive {
+        height: 150px;
+    }
+
+    .responsive li {
+        margin: 4px 0;
+        padding: 5px 2px;
+    }
+
+    nav .navbar.responsive li {
+        display: block;
+    }
+
+    .cards {
+        width: 40%;
+        height: 100%;
+    }
+}
+
+
+/* for bigger ipad / tablets  */
+@media only screen and (min-width: 900px) and (max-width: 1200px) {
+    .hamburger {
+        display: block;
+        position: relative;
+        z-index: 1;
+    }
+
+    .hamburger:hover {
+        cursor: pointer;
+    }
+    .navbar li {
+        display: none;
+    }
+
+    .search-icon {
+        width: 300px;
+        position: static;
+    }
+
+    .search-icon input {
+        width: 300px;
+        margin-right: 15px;
+    }
+
+    .sign-up {
+        position: absolute;
+        right: 40px
+    }
+
+    .logo {
+        z-index: 1;
+    }
+
+    nav .navbar.responsive {
+        flex-direction: column;
+    }
+
+    nav {
+        position: static;
+        justify-content: start;
+    }
+
+    .response {
+        height: 150px;
+    }
+
+    .responsive {
+        height: 150px;
+    }
+
+    .responsive li {
+        margin: 4px 0;
+        padding: 5px 2px;
+    }
+
+    nav .navbar.responsive li {
+        display: block;
+    }
+
+    .cards {
+        width: 40%;
+        height: 100%;
+    }
+}

@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Music App</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+        integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="../stylesheet/style.css">
+    <link rel="stylesheet" href="../stylesheet/responsiveStyle.css">
+</head>
+
+<body>
+    <nav id="topNav" class="">
+        <div class="logo">
+            <img src="../images/music-player logo.png" alt="Music Player">
+            <i class="fa-solid fa-bars hamburger" style="color: #ffffff;" onclick="myBurger()"></i>
+        </div>
+        <ul class="navbar" id="burger">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="library.html">library</a></li>
+            <li><a href="contanct.html">Contact Us</a></li>
+            <li><a href="about.html">About</a></li>
+        </ul>
+        <div class="search-icon"><input type="text" placeholder="search your artist">
+            <i class="fa-brands fa-searchengin search" style="color: #ffff;"></i></div>
+        <div class="sign-up"><a href="registor.html"><i class="fa-solid fa-user-plus" style="color: #ffffff;"></i></a>
+        </div>
+    </nav>
+    
+    <main>
+        <div class="banner">
+            <h2>Start playing the latest trend</h2>
+        </div>
+        <div class="container">
+            <div class="cards"><img src="../images/clear-sound-7102513_640.jpg" alt="">
+                <h3>Meditation</h3>
+                <p>Deep dive in music world and find your peace</p>
+                <i class="fa-regular fa-circle-play play-btn song-play" style="color: #ffffff;" id="0"></i>
+            </div>
+            <div class="cards"><img src="../images/clef-1439137_640.jpg" alt="">
+                <h3>Deep Focus</h3>
+                <p>Keep calm and focus with ambient music</p>
+                <i class="fa-regular fa-circle-play play-btn song-play" style="color: #ffffff;" id="1"></i>
+            </div>
+            <div class="cards"><img src="../images/composing-2434042_640.jpg" alt="">
+                <h3>Party</h3>
+                <p>Enjoy every single beat of music</p>
+                <i class="fa-regular fa-circle-play play-btn song-play" style="color: #ffffff;" id="2"></i>
+            </div>
+            <div class="cards"><img src="../images/guitar-2886886_640.jpg" alt="">
+                <h3>Work Flow</h3>
+                <p>Keep your mind relaxed in stressful enviornment</p>
+                <i class="fa-regular fa-circle-play play-btn song-play" style="color: #ffffff;" id="3"></i>
+            </div>
+            <div class="cards"><img src="../images/nebula-1922570_640.png" alt="">
+                <h3>Work Out</h3>
+                <p>Sync yourself with every beat</p>
+                <i class="fa-regular fa-circle-play play-btn song-play" style="color: #ffffff;" id="4"></i>
+            </div>
+            <div class="cards"><img src="../images/scenery-2546328_640.png" alt="">
+                <h3>Adventure & Travel</h3>
+                <p>Enjoy your road trips and drive-bys</p>
+                <i class="fa-regular fa-circle-play play-btn song-play" style="color: #ffffff;" id="5"></i>
+            </div>
+            <div class="cards"><img src="../images/sunrise-1959227_640.jpg" alt="">
+                <h3>Relaxation</h3>
+                <p>Release all your stress and pressure and feel the music</p>
+                <i class="fa-regular fa-circle-play play-btn song-play" style="color: #ffffff;" id="6"></i>
+            </div>
+            <div class="cards"><img src="../images/tunnel-3233082_640.jpg" alt="">
+                <h3>Focus Flow</h3>
+                <p>Uptempo instrumental hip hop beats</p>
+                <i class="fa-regular fa-circle-play play-btn song-play" style="color: #ffffff;" id="7"></i>
+            </div>
+        </div>
+
+        <div class="media-player">
+            <div class="song-player">
+                <input type="range" name="range" id="progress-bar" min="0" max="100" value="0">
+            </div>
+            <div class="media-icons">
+                <span id="master-song-name">come-with-me</span>
+                <i class="fa-solid fa-backward" style="color: #d5d8dc;" id="backward"></i>
+                <i class="fa-regular fa-circle-play" style="color: #d5d8dc;" id="masterPlay"></i>
+                <i class="fa-solid fa-forward" style="color: #d5d8dc;" id="forward"></i>
+            </div>
+        </div>
+    </main>
+    <script src="../script/script.js"></script>
+    <script src="../script/responsiveStyle.js"></script>
+</body>
+</html>

@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Music App</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+        integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <style>
+            body {
+                color: whitesmoke;
+            }
+    
+            .banner {
+                text-align: center;
+                text-decoration: underline;
+            }
+    
+            .blog-box {
+                width: 88vw;
+                height: 300px;
+                background: transparent;
+                backdrop-filter: blur(5px);
+                margin: auto;
+                margin-top: 30px;
+                margin-bottom: 30px;
+                display: flex;
+                justify-content: space-around;
+                align-items: center;
+                border: 1px solid rgb(126, 124, 120);
+                border-radius: 8px;
+                font-size: 1.3rem;
+                text-align: justify;
+            }
+    
+            .blog {
+                    width: 60%;
+                }
+    
+                .blog-img {
+                    width: 24%;
+                    border-radius: 8px;
+                }
+    
+                .blog-head {
+                    text-decoration: underline;
+                    margin-left: 40px;
+                }
+    
+                .links {
+                    color: whitesmoke;
+                }
+    
+            /* making content responsive */
+            @media only screen and (min-width: 375px) and (max-width: 811px) {
+                .blog-box {
+                    flex-direction: column;
+                    height: 540px;
+                    font-size: 1.1rem;
+                }
+    
+                .blog {
+                    width: 94%;
+                }
+    
+                .blog-img {
+                    width: 60%;
+                }
+            }
+        </style>
+    <link rel="stylesheet" href="../stylesheet/style.css">
+    <link rel="stylesheet" href="../stylesheet/responsiveStyle.css">
+</head>
+
+<body>
+    <nav id="topNav" class="">
+        <div class="logo">
+            <img src="../images/music-player logo.png" alt="Music Player">
+            <i class="fa-solid fa-bars hamburger" style="color: #ffffff;" onclick="myBurger()"></i>
+        </div>
+        <ul class="navbar" id="burger">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="library.html">library</a></li>
+            <li><a href="contanct.html">Contact Us</a></li>
+            <li><a href="about.html">About</a></li>
+        </ul>
+        <div class="search-icon"><input type="text" placeholder="search your artist">
+            <i class="fa-brands fa-searchengin search" style="color: #ffff;"></i></div>
+        <div class="sign-up"><a href="registor.html"><i class="fa-solid fa-user-plus" style="color: #ffffff;"></i></a>
+        </div>
+    </nav>
+    
+     <h1 class="banner">About the Web Page</h1>
+
+    <main>
+            <div class="blog-box">
+                <img src="../images/music-player logo.png" alt="" class="blog-img">
+                <div class="blog">
+                    <h2 class="blog-head">Project</h2>
+                    <p class="blog-para">
+                    <ul>
+                        <li>This is a front end design of a Music Player Website. This websites displays how we can
+                            manipulate audios files inside a web page.</li>
+                        <li>In this website we can play a song , we can go between previous and next song and scroll between a song.</li>
+                        <li>This is website is fully responsive and can adapt to different screen sizes like mobile, tablet and desktops</li>
+                    </ul>
+                    </p>
+                </div>
+            </div>
+
+            <div class="blog-box">
+                <img src="../images/technologies.jpg" alt="" class="blog-img">
+                <div class="blog">
+                    <h2 class="blog-head">Technologies Used</h2>
+                    <p class="blog-para">
+                    <ul>
+                        <li>This front end design is build using HTML5 , CSS and Java script</li>
+                        <li>The main functioning that is interacting with the audio was achieved with the use of java
+                            script Web API</li>
+                        <li>This web page almost made from scratch without using any framework like bootsrap or tailwind
+                            CSS</li>
+                        <li>The icons used in the webpage are imported from font awesome website using their cdnjs link in our webpage</li>
+                    </ul>
+                    </p>
+                </div>
+            </div>
+
+            <div class="blog-box">
+                <img src="../images/social-media-5187243_640.png" alt="" class="blog-img">
+                <div class="blog">
+                    <h2 class="blog-head">Acknowledgement</h2>
+                    <p class="blog-para">
+                    <ul>
+                        <li>The images, logo and all the music audios used in the website are copyright free content
+                            provided by the <a href="https://pixabay.com/" class="links" target="_blank">Pixaby</a>.</li>
+                        <li>Icons used in this Website are provided by the <i class="fa-solid fa-font-awesome"></i>
+                            <a href="https://fontawesome.com/" class="links" target="_blank">font-awesome website.</a></li>
+                        <li>The main functioning that is interacting with the audio was achieved with the use of java
+                            script Web API</li>
+                    </ul>
+                    </p>
+                </div>
+            </div>
+
+            <div class="blog-box">
+                <img src="../images/web-3967926_640.jpg" alt="" class="blog-img">
+                <div class="blog">
+                    <h2 class="blog-head">References</h2>
+                    <p class="blog-para">
+                    <ul>
+                        <li><a href="https://www.w3schools.com/" target="_blank" class="links">w3schools</a></li>
+                        <li><a href="https://developer.mozilla.org/" target="_blank" class="links">MDN Web Docs</a></li>
+                        <li><a href="https://www.javascripttutorial.net/" target="_blank" class="links">Javascripttutorial</a></li>
+                    </ul>
+                    </p>
+                </div>
+            </div>
+    </main>
+    <script src="../script/script.js"></script>
+    <script src="../script/responsiveStyle.js"></script>
+</body>
+</html>
